@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(
-  "mongodb+srv://shoibalibhai:xtHyQAchIymwfmvU@cluster0.phiqsn3.mongodb.net/paytm-DB"
-);
+require("dotenv").config();
+
+const datastring = process.env.databseURL;
+
+mongoose.connect(datastring);
 
 const Schema = mongoose.Schema;
 
