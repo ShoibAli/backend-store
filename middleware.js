@@ -1,4 +1,5 @@
-const { JWT_SECRET } = require("../backend/config");
+// const { JWT_SECRET } = require("../backend/config");
+const { JWT_SECRET } = require("./config");
 const jwt = require("jsonwebtoken");
 
 const autoMiddleware = (req, res, next) => {
